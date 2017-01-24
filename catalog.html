@@ -8,13 +8,13 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="main-menu">
+        <nav class="nav-menu">
           <div class="header-logo">
             <a class="main-logo" href="index.html">
-            <img src="http://placehold.it/100x50" alt="Barbershop" width="100" height="50">
+              <img src="http://placehold.it/100x50" alt="Barbershop" width="100" height="50">
             </a>
           </div>
-          <ul>
+          <ul class="main-menu">
             <li>
               <a href="#">Информация</a>
             </li>
@@ -24,7 +24,7 @@
             <li>
               <a href="#">Прайс-лист</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">Магазин</a>
             </li>
             <li>
@@ -39,13 +39,13 @@
     </header>
     <main>
       <div class="index-top">
-        <h1>Средства для ухода</h1>
+        <h1 class="product-class">Средства для ухода</h1>
         <ul class="breadcrumbs"> 
           <li>
             <a href="#">Главная</a>
           </li>
           <li>
-            <a href="#">Магазин</a>
+            <a href="#" class="active">Магазин</a>
           </li>
           <li>Средства для ухода</li>
         </ul>
@@ -54,36 +54,36 @@
         <form action="#" method="post">
           <fieldset class="filter-box">
             <legend>Производители:</legend>
-              <input type="checkbox" name="filter1.1" id="filter1.1" checked>
-              <label for="filter1.1">BAXTER OF CALIFORNIA</label>
+            <input type="checkbox" name="filter1.1" id="filter1.1" checked>
+            <label for="filter1.1">BAXTER OF CALIFORNIA</label>
 
-              <input type="checkbox" name="filter1.2" id="filter1.2">
-              <label for="filter1.2">MR NATTY</label>
+            <input type="checkbox" name="filter1.2" id="filter1.2">
+            <label for="filter1.2">MR NATTY</label>
 
-              <input type="checkbox" name="filter1.3" id="filter1.3" checked>
-              <label for="filter1.3">SUAVECITO</label>
+            <input type="checkbox" name="filter1.3" id="filter1.3" checked>
+            <label for="filter1.3">SUAVECITO</label>
 
-              <input type="checkbox" name="filter1.4" id="filter1.4">
-              <label for="filter1.4">MALIN+GOETZ</label>
+            <input type="checkbox" name="filter1.4" id="filter1.4">
+            <label for="filter1.4">MALIN+GOETZ</label>
 
-              <input type="checkbox" name="filter1.5" id="filter1.5">
-              <label for="filter1.5">MURRAY'S</label>
+            <input type="checkbox" name="filter1.5" id="filter1.5">
+            <label for="filter1.5">MURRAY'S</label>
 
-              <input type="checkbox" name="filter1.6" id="filter1.6" checked>
-              <label for="filter1.6">AMERICAN CREW</label>
+            <input type="checkbox" name="filter1.6" id="filter1.6" checked>
+            <label for="filter1.6">AMERICAN CREW</label>
           </fieldset>
           <fieldset class="filter-box">
             <legend>Группы товаров:</legend>
-              <input type="checkbox" name="filter2.1" id="filter2.1">
-              <label for="filter2.1">Бритвенные принадлежности</label>
+            <input type="checkbox" name="filter2.1" id="filter2.1">
+            <label for="filter2.1">Бритвенные принадлежности</label>
 
-              <input type="checkbox" name="filter2.2" id="filter2.2" checked>
-              <label for="filter2.2">Средства для ухода</label>
+            <input type="checkbox" name="filter2.2" id="filter2.2" checked>
+            <label for="filter2.2">Средства для ухода</label>
 
-              <input type="checkbox" name="filter2.3" id="filter2.3">
-              <label for="filter2.3">Аксессуары</label>
+            <input type="checkbox" name="filter2.3" id="filter2.3">
+            <label for="filter2.3">Аксессуары</label>
           </fieldset>
-               <input type="submit" class="btn" value="Показать"> 
+          <input type="submit" class="btn" value="Показать"> 
         </form>
       </div>
       <div class="products">
@@ -92,12 +92,12 @@
             <img src="http://placehold.it/70x40" alt="Набор для путешествий BAXTER OF CALIFORNIA" width="70" height="40">
           </a>
           <a class="product-description" href="catalog-item.html">
-          Набор для путешествий<br>
-          <span class="product-title">"BAXTER OF CALIFORNIA"</span>
+            Набор для путешествий
+            <span class="product-title">"BAXTER OF CALIFORNIA"</span>
           </a>
           <div class="price_buy">
             <span class="price">2990 руб.</span>
-            <a class="btn" href="#">Купить</a> <!--Если мы оформляем кнопку "Купить" как ссылку, получается, при нажатии на нее, открывается окно корзины? А если оформляем как buuton type submit или input type submit, товар просто будет добавлен в корзину, но окно не откроется?-->
+            <a class="btn" href="#">Купить</a> 
           </div>
         </article>
         <article class="product">
@@ -105,8 +105,8 @@
             <img src="http://placehold.it/70x40" alt="Увлажняюющий кондиционер BAXTER OF CALIFORNIA" width="70" height="40">
           </a>
           <a class="product-description" href="#">
-          Увлажняющий кондиционер<br>
-          <span class="product-title">"BAXTER OF CALIFORNIA"</span>
+            Увлажняющий кондиционер
+            <span class="product-title">"BAXTER OF CALIFORNIA"</span>
           </a>
           <div class="price_buy">
             <span class="price">750 руб.</span>
@@ -118,8 +118,8 @@
             <img src="http://placehold.it/70x40" alt="Гель для волос SUAVECITO" width="70" height="40">
           </a>
           <a class="product-description" href="#">
-          Гель для волос<br>
-          <span class="product-title">"SUAVECITO"</span>
+            Гель для волос
+            <span class="product-title">"SUAVECITO"</span>
           </a>
           <div class="price_buy">
             <span class="price">290 руб.</span>
@@ -131,8 +131,8 @@
             <img src="http://placehold.it/70x40" alt="Гель для укладки волос AMERICAN CREW" width="70" height="40">
           </a>
           <a class="product-description" href="#">
-          Гель для укладки волос<br>
-          <span class="product-title">"AMERICAN CREW"</span>
+            Гель для укладки волос
+            <span class="product-title">"AMERICAN CREW"</span>
           </a>
           <div class="price_buy">
             <span class="price">500 руб.</span>
@@ -144,8 +144,8 @@
             <img src="http://placehold.it/70x40" alt="Гель для волос AMERICAN CREW" width="70" height="40">
           </a>
           <a class="product-description" href="#">
-          Гель для волос<br> 
-          <span class="product-title">"AMERICAN CREW"</span>
+            Гель для волос
+            <span class="product-title">"AMERICAN CREW"</span>
           </a>
           <div class="price_buy">
             <span class="price">300 руб.</span>
@@ -157,8 +157,8 @@
             <img src="http://placehold.it/70x40" alt="Набор для бритья BAXTER OF CALIFORNIA" width="70" height="40">
           </a>
           <a class="product-description" href="#">
-          Набор для бритья<br>
-          <span class="product-title">"BAXTER OF CALIFORNIA"</span>
+            Набор для бритья
+            <span class="product-title">"BAXTER OF CALIFORNIA"</span>
           </a>
           <div class="price_buy">
             <span class="price">3900 руб.</span>
@@ -167,10 +167,10 @@
         </article>
       </div>
       <div class="paginator">
-        <a class="btn" href="#1"></a>
-        <a class="btn current" href="#2"></a>
-        <a class="btn" href="#3"></a>
-        <a class="btn" href="#4"></a>
+        <a class="btn" href="#1">1</a>
+        <a class="btn active">2</a>
+        <a class="btn" href="#3">3</a>
+        <a class="btn" href="#4">4</a>
       </div>
     </main>
     <footer class="page-footer">
